@@ -37,10 +37,19 @@
   }
 }
 
+ 
  .navbar{
   display: block;
-  background-color: blue;
+  background-color: rgb(56, 56, 96);
  }
  .navbar ul{
+  margin-top: 0rem;
+  justify-content: center;
   display: flex;
+ }
+ .navbar ul li{
+  list-style: none;
+  font-size: 2rem;
+  padding: 10px;
+  color: white;
  }

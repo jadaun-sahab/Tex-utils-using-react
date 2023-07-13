@@ -1,9 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="blank">lovely</div>
+    <>
+      <nav className="navbar">
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>BLOG</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </>
   );
 }
 

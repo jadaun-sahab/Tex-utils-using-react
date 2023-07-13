@@ -4,14 +4,14 @@ import "./App.css";
 function App() {
   return (
     <>
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <ul>
           <li>HOME</li>
           <li>ABOUT</li>
           <li>BLOG</li>
           <li>CONTACT</li>
         </ul>
-      </nav>
+      </nav> */}
     </>
   );
 }

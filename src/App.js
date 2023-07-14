@@ -7,7 +7,10 @@ function App() {
     <>
       
 <Navbar title="Text-Utils" abouttext="About us"/> 
+<div className="container">
+
 <TextForm/>
+</div>
     </>
   );
 }

@@ -4,7 +4,7 @@ export default function TextForm() {
   return (
     <>
       <div className="mb-3">
-        <label for="exampleFormControlTextarea1" className="form-label">
+        <label for="my-box" className="form-label">
           Example textarea
         </label>
         <textarea

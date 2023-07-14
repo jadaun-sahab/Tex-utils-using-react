@@ -29,3 +29,4 @@ export default function Navbar(props) {
   )
 }
 Navbar.propTypes = {title : PropTypes.string, abouttext: PropTypes.string}
+Navbar.defaultProps={title:'navi',abouttext:'abi'}

@@ -9,7 +9,7 @@ export default function TextForm() {
         </label>
         <textarea
           className="form-control"
-          id="exampleFormControlTextarea1"
+          id="mybox"
           rows="3"
         ></textarea>
       </div>

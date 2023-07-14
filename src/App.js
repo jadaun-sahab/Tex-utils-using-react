@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       
-<Navbar></Navbar>
+<Navbar title="vikas"/> 
     </>
   );
 }

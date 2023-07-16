@@ -7,6 +7,7 @@ export default function TextForm(props) {
       <div className="mb-3">
         <textarea className="form-control" id="mybox" rows="8"></textarea>
       </div>
+      <button className="btn btn-primary">convert to uppercase</button>
     </div>
   );
 }

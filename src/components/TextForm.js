@@ -1,7 +1,7 @@
-import React , {useState} from "react";
-const [text, setText] = useState('enter text here');
+import React , {useState} from 'react';
 
 export default function TextForm(props) {
+  const [text, setText] = useState('enter text here');
   return (
     <div>
       <h1>{props.heading}</h1>

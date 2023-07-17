@@ -4,7 +4,7 @@ export default function TextForm(props) {
   const [text, setText] = useState('enter text here');
   return (
     <div>
-      <h1>{props.heading}</h1>
+      <h1>{props.heading}-{text}</h1>
       <div className="mb-3">
         <textarea className="form-control" id="mybox" rows="8"></textarea>
       </div>

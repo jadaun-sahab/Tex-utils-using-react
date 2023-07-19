@@ -2,7 +2,8 @@ import React , {useState} from 'react';
 
 export default function TextForm(props) {
   const handleUpClick=()=>{
-alert("yoooooooo")
+setText("yooooooooooooooooooooooooooooooooooooo")
+let newText=text.toUpperCase();
   }
 
   const handleOnChange=(event)=>{

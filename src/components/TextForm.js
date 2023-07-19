@@ -2,11 +2,11 @@ import React , {useState} from 'react';
 
 export default function TextForm(props) {
   const handleUpClick=()=>{
-
+alert("yoooooooo")
   }
 
-  const handleOnChange=()=>{
-
+  const handleOnChange=(event)=>{
+setText(event.target.value)
   }
   const [text, setText] = useState('Enter text here');
   return (

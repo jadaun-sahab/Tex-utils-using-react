@@ -2,14 +2,14 @@ import React , {useState} from 'react';
 
 export default function TextForm(props) {
   const handleUpClick=()=>{
-setText("yooooooooooooooooooooooooooooooooooooo")
-let newText=text.toUpperCase();
+    let newText=text.toUpperCase();
+    setText(newText)
   }
 
   const handleOnChange=(event)=>{
 setText(event.target.value)
   }
-  const [text, setText] = useState('Enter text here');
+  const [text, setText] = useState('Enter Text Here');
   return (
     <div>
       <h1>{props.heading} </h1>

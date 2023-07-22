@@ -20,8 +20,9 @@ export default function TextForm(props) {
       </div>
       <button className="btn btn-primary" onClick={handleUpClick}>Convert to uppercase</button>
     </div>
-    <div className="container">
+    <div className="container my-2">
       <h1>submit your text</h1>
+      <p>{text.split(" ").length} Words and  character</p>
     </div>
     </>
     

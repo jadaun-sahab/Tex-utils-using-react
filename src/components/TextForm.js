@@ -22,7 +22,7 @@ export default function TextForm(props) {
     </div>
     <div className="container my-2">
       <h1>submit your text</h1>
-      <p>{text.split(" ").length} Words and  character</p>
+      <p>{text.split(" ").length} Words and {text.length} character</p>
     </div>
     </>
     

@@ -1,8 +1,14 @@
 import React from 'react'
 
 export default function About() {
+
+  let mystyle={
+    color:"red",
+    backgroundColor:'blue'
+  }
+
   return (
-    <div className="container">
+    <div className="container" style={mystyle}>
      <h1 className='my-5'>About us</h1>
       <div className="accordion" id="accordionExample">
   <div className="accordion-item">

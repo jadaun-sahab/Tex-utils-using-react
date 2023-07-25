@@ -4,7 +4,7 @@ export default function About() {
 
   let[ btntext , setBtntext]= useState("Enable Light mode")
   let[ myStyle , setmyStyle]= useState({
-    color:"aqua",
+    color: "aqua",
     backgroundColor:'black'
   })
 

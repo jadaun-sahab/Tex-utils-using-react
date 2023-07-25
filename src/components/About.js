@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 export default function About() {
 
+  let[ btntext , setBtntext]= useState("Enable Dark mode")
   let[ myStyle , setmyStyle]= useState({
     color:"aqua",
     backgroundColor:'black'
@@ -13,6 +14,7 @@ export default function About() {
         color:"black",
         backgroundColor:'aqua'  
       })
+      setBtntext("Enable Light mode")
     }
     else{
       setmyStyle({
@@ -64,7 +66,7 @@ export default function About() {
   </div>
 </div>
 <div className="container my-3">
-<button onClick={toggleStyle} type="button" class="btn btn-primary my-2">Dark Mode</button>
+<button onClick={toggleStyle} type="button" class="btn btn-primary my-2">{btntext}</button>
 </div>
 
     </div>

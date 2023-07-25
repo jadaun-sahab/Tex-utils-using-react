@@ -2,25 +2,26 @@ import React, { useState } from 'react'
 
 export default function About() {
 
-  let[ btntext , setBtntext]= useState("Enable Dark mode")
+  let[ btntext , setBtntext]= useState("Enable Light mode")
   let[ myStyle , setmyStyle]= useState({
     color:"aqua",
     backgroundColor:'black'
   })
 
  let toggleStyle=()=>{
-    if(myStyle.color=="aqua"){
+    if(myStyle.color === "aqua"){
       setmyStyle({
         color:"black",
         backgroundColor:'aqua'  
       })
-      setBtntext("Enable Light mode")
+      setBtntext("Enable Dark mode")
     }
     else{
       setmyStyle({
         color:"aqua",
         backgroundColor:'black'  
       })
+      setBtntext("Enable Light mode")
     }
   }
 

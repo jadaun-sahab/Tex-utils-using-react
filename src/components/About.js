@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function About() {
 
-  let mystyle={
+  let[ mystyle , setmystyle]= useState({
     color:"aqua",
     backgroundColor:'black'
-  }
-
+  })
+  
   return (
     <div className="container" style={mystyle}>
      <h1 className='my-5'>About us</h1>

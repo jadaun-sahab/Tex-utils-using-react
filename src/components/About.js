@@ -8,7 +8,7 @@ export default function About() {
     backgroundColor:'black'
   })
 
- let toggleStyle=()=>{
+ let toggleStyle = () => {
     if(myStyle.color === "aqua"){
       setmyStyle({
         color:"black",

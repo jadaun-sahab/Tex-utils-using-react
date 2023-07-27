@@ -29,7 +29,7 @@ export default function TextForm(props) {
       </div>
       <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
       <button className="btn btn-primary mx-3" onClick={handleLoClick}>Convert to Lowercase</button>
-      <button className="btn btn-primary mx-3" onClick={handleLoClick}>Convert to Lowercase</button>
+      <button className="btn btn-primary mx-3" onClick={handleExtraSpace}>Remove Extra Space</button>
     </div>
     <div className="container my-2">
       <h1>submit your text</h1>

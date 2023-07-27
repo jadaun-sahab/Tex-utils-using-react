@@ -13,6 +13,12 @@ export default function TextForm(props) {
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
+
+  const handleExtraSpace = (event) => {
+    let newText=text.split(/[ ]+/);
+    setText(newText.join(" "));
+  };
+
   const [text, setText] = useState("Enter Text Here");
   return (
     <>
@@ -22,6 +28,7 @@ export default function TextForm(props) {
         <textarea className="form-control" value={text} onChange={handleOnChange} id="mybox" rows="8"></textarea>
       </div>
       <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
+      <button className="btn btn-primary mx-3" onClick={handleLoClick}>Convert to Lowercase</button>
       <button className="btn btn-primary mx-3" onClick={handleLoClick}>Convert to Lowercase</button>
     </div>
     <div className="container my-2">

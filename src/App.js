@@ -3,13 +3,14 @@ import "./App.css";
 // import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
+import Alert from "./components/Alert";
 
 function App() {
   const [mode , setMode] = useState('light') ;
   const toggleMode = () =>{
     if(mode ==='light'){
       setMode('dark');
-      document.body.style.backgroundColor='grey';
+      document.body.style.backgroundColor='#345678';
     }
     else{
       setMode('light');
@@ -20,6 +21,7 @@ function App() {
     <>
       
 <Navbar title="Text-Utils" abouttext="About us" mode={mode} toggleMode={toggleMode} /> 
+<Alert/>
 <div className="container my-3">
 
 <TextForm heading="Enter The Text Here To Analyze" mode={mode}/>

@@ -17,13 +17,13 @@ function App() {
   const toggleMode = () =>{
     if(mode ==='light'){
       setMode('dark');
-      document.body.style.backgroundColor='#345678';
-      showAlert("dark mode enabled","success");
+      document.body.style.backgroundColor='#10273f';
+      showAlert("Dark mode enabled","success");
     }
     else{
       setMode('light');
       document.body.style.backgroundColor='white';
-      showAlert("light mode enabled","success");
+      showAlert("Light mode enabled","success");
     }
   }
   return (

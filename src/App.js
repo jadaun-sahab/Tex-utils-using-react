@@ -7,7 +7,7 @@ import Alert from "./components/Alert";
 
 function App() {
   const [mode , setMode] = useState('light') ;
-  const [alert, setAlert]= useState(null);
+  const [alert, setAlert]= useState(null)
   const showAlert=(message, type)=>{
     setAlert({
       msg:message,
@@ -18,10 +18,12 @@ function App() {
     if(mode ==='light'){
       setMode('dark');
       document.body.style.backgroundColor='#345678';
+      showAlert("dark mode enabled","success");
     }
     else{
       setMode('light');
       document.body.style.backgroundColor='white';
+      showAlert("light mode enabled","success");
     }
   }
   return (

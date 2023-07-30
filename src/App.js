@@ -7,6 +7,13 @@ import Alert from "./components/Alert";
 
 function App() {
   const [mode , setMode] = useState('light') ;
+  const [alert, setAlert]= useState(null);
+  const showAlert=(message, type)=>{
+    setAlert({
+      msg:message,
+      type:type
+    })
+  }
   const toggleMode = () =>{
     if(mode ==='light'){
       setMode('dark');
@@ -21,7 +28,7 @@ function App() {
     <>
       
 <Navbar title="Text-Utils" abouttext="About us" mode={mode} toggleMode={toggleMode} /> 
-<Alert/>
+<Alert alert={alert}/>
 <div className="container my-3">
 
 <TextForm heading="Enter The Text Here To Analyze" mode={mode}/>
